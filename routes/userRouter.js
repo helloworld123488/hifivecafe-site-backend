@@ -1121,7 +1121,7 @@ router.post("/reset-password", async (req, res) => {
 });
 
 //track visitor
-router.post("/website/track/visitor", async (req, res) => {
+router.post("/track/visitor", async (req, res) => {
     try {
         let { ip, browser, page, userid } = req.body;
         const currentdate = await getIndianDateTime();
