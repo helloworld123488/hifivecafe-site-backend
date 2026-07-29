@@ -32,10 +32,10 @@ app.get("/test1", (req, res) => {
     res.send("success");
 })
 
-app.use('/backend/website', userRouter);
+app.use('/website', userRouter);
 
 // Use the admin router
-app.use('/backend/admin', adminRouter);
+app.use('/admin', adminRouter);
 
 
 
