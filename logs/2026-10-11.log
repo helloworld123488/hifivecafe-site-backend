@@ -1,0 +1,302 @@
+[11/10/2026, 8:20:16 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:20:16 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:20:16 pm] [SUCCESS]: Route: /website/reservation/list
+[11/10/2026, 8:20:18 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:20:18 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:20:18 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[11/10/2026, 8:20:19 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[11/10/2026, 8:20:19 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[11/10/2026, 8:20:19 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5
+[11/10/2026, 8:20:20 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=16&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:20:20 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=16&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:20:20 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=16&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[11/10/2026, 8:20:25 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:20:25 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:20:25 pm] [SUCCESS]: Route: /website/check/booking/time_slot
+[11/10/2026, 8:20:29 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:20:29 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:20:43 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:20:43 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:20:43 pm] [SUCCESS]: Route: /website/reservation/booking/create, booking_id:138
+[11/10/2026, 8:20:43 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:20:43 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:20:44 pm] [SUCCESS]: Start RazorPay1:
+[11/10/2026, 8:20:44 pm] [SUCCESS]: order: {"amount":500000,"amount_due":500000,"amount_paid":0,"attempts":0,"created_at":1791730241,"currency":"INR","entity":"order","id":"order_Tmdksy7awqoY1u","notes":[],"offer_id":null,"receipt":"BOOKID138","status":"created"}
+[11/10/2026, 8:20:44 pm] [SUCCESS]: End RazorPay:
+[11/10/2026, 8:20:44 pm] [SUCCESS]: Created Order Route: /website/reservation/booking/create, booking_id:138
+[11/10/2026, 8:21:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:21:10 pm] [SUCCESS]: Start RazorPay fetchPaymentDetails:
+[11/10/2026, 8:21:10 pm] [SUCCESS]: paymentDetails: {"id":"pay_Tmdl24oK1ljzjq","entity":"payment","amount":500000,"currency":"INR","status":"captured","order_id":"order_Tmdksy7awqoY1u","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":true,"description":"Red Silver Table Booking","card_id":null,"bank":"CNRB","wallet":null,"vpa":null,"email":"jerindauntless@gmail.com","contact":"+919751752751","notes":{"address":"HiFive Cafe"},"fee":11800,"tax":1800,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"7642539"},"created_at":1791730249}
+[11/10/2026, 8:21:10 pm] [SUCCESS]: End RazorPay fetchPaymentDetails:
+[11/10/2026, 8:21:10 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:21:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:21:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:21:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:21:14 pm] [SUCCESS]: Route: HiFive Cafe -  Your Booking, Email sent to: jerindauntless@gmail.com, ID: <a263890c-87e6-84f6-5c3b-0f2832cccbd7@gmail.com>
+[11/10/2026, 8:21:14 pm] [INFO]: Route: sendMessage, booking Parameters: {"booking_id":"BOOKID138","sub_title":"Red Silver Table","date":"04-11-2026","time_slot":"8 pm to 10 pm","total_people":"2"}
+[11/10/2026, 8:21:14 pm] [INFO]: Route: sendMessage, customer Parameters: {"user_mobile":"919751752751","user_name":"Jerin","user_email":"jerindauntless@gmail.com"}
+[11/10/2026, 8:21:14 pm] [INFO]: Route: sendMessage, After Sending Parameters: [{"type":"text","text":"Jerin"},{"type":"text","text":"BOOKID138"},{"type":"text","text":"04-11-2026"},{"type":"text","text":"8 pm to 10 pm"},{"type":"text","text":"2"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"HiFive Cafe"},{"type":"text","text":"9751752751"}]
+[11/10/2026, 8:21:16 pm] [SUCCESS]: DB Record Event Done Route: "updateMessageEvent"
+[11/10/2026, 8:21:16 pm] [ERROR]: Route: sendMessage, number: 919751752751, Error: Request failed with status code 400
+[11/10/2026, 8:21:16 pm] [SUCCESS]: Route: /website/reservation/booking/update, updatebooking_id:138
+[11/10/2026, 8:21:16 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:21:16 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:21:16 pm] [SUCCESS]: Route: /website/order/api
+[11/10/2026, 8:25:19 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:25:20 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:25:20 pm] [SUCCESS]: Route: /website/reservation/list
+[11/10/2026, 8:25:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:25:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:25:21 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[11/10/2026, 8:25:23 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:25:23 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:25:23 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=1
+[11/10/2026, 8:25:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:25:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:25:24 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[11/10/2026, 8:25:28 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:25:28 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:25:47 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:25:47 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:25:47 pm] [SUCCESS]: Route: /website/reservation/booking/create, booking_id:139
+[11/10/2026, 8:25:47 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:25:47 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:25:47 pm] [SUCCESS]: Start RazorPay1:
+[11/10/2026, 8:25:47 pm] [SUCCESS]: order: {"amount":650000,"amount_due":650000,"amount_paid":0,"attempts":0,"created_at":1791730544,"currency":"INR","entity":"order","id":"order_TmdqEGhMqlS7ul","notes":[],"offer_id":null,"receipt":"BOOKID139","status":"created"}
+[11/10/2026, 8:25:47 pm] [SUCCESS]: End RazorPay:
+[11/10/2026, 8:25:47 pm] [SUCCESS]: Created Order Route: /website/reservation/booking/create, booking_id:139
+[11/10/2026, 8:26:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:26:10 pm] [SUCCESS]: Start RazorPay fetchPaymentDetails:
+[11/10/2026, 8:26:10 pm] [SUCCESS]: paymentDetails: {"id":"pay_TmdqK8rbhP76El","entity":"payment","amount":650000,"currency":"INR","status":"captured","order_id":"order_TmdqEGhMqlS7ul","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":true,"description":"Love with Flowers Booking","card_id":null,"bank":"CNRB","wallet":null,"vpa":null,"email":"jerindauntless@gmail.com","contact":"+919751752751","notes":{"address":"HiFive Cafe"},"fee":15340,"tax":2340,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"9729767"},"created_at":1791730550}
+[11/10/2026, 8:26:10 pm] [SUCCESS]: End RazorPay fetchPaymentDetails:
+[11/10/2026, 8:26:10 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:26:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:26:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:26:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:26:14 pm] [SUCCESS]: Route: HiFive Cafe -  Your Booking, Email sent to: jerindauntless@gmail.com, ID: <8a65f60c-b908-d1eb-bb39-1b1b023515c7@gmail.com>
+[11/10/2026, 8:26:14 pm] [INFO]: Route: sendMessage, booking Parameters: {"booking_id":"BOOKID139","sub_title":"Love with Flowers","date":"21-10-2026","time_slot":"2 pm to 4 pm","total_people":"2"}
+[11/10/2026, 8:26:14 pm] [INFO]: Route: sendMessage, customer Parameters: {"user_mobile":"919751752751","user_name":"Jerin","user_email":"jerindauntless@gmail.com"}
+[11/10/2026, 8:26:14 pm] [INFO]: Route: sendMessage, After Sending Parameters: [{"type":"text","text":"Jerin"},{"type":"text","text":"BOOKID139"},{"type":"text","text":"21-10-2026"},{"type":"text","text":"2 pm to 4 pm"},{"type":"text","text":"2"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"HiFive Cafe"}]
+[11/10/2026, 8:26:15 pm] [SUCCESS]: DB Record Event Done Route: "updateMessageEvent"
+[11/10/2026, 8:26:15 pm] [SUCCESS]: Route: /website/reservation/booking/update, updatebooking_id:139
+[11/10/2026, 8:26:15 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:26:15 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:26:15 pm] [SUCCESS]: Route: /website/order/api
+[11/10/2026, 8:33:44 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:33:44 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:33:44 pm] [SUCCESS]: Route: /website/order/api
+[11/10/2026, 8:33:46 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:33:46 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:33:46 pm] [SUCCESS]: Route: /website/reservation/list
+[11/10/2026, 8:33:48 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:33:48 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:33:48 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[11/10/2026, 8:33:49 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:33:49 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:33:49 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=1
+[11/10/2026, 8:33:50 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=1&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:33:50 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=1&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:33:50 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=1&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[11/10/2026, 8:33:55 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:33:55 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:34:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:34:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:34:17 pm] [SUCCESS]: Route: /website/reservation/booking/create, booking_id:140
+[11/10/2026, 8:34:17 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:34:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:34:17 pm] [SUCCESS]: Start RazorPay1:
+[11/10/2026, 8:34:17 pm] [SUCCESS]: order: {"amount":650000,"amount_due":650000,"amount_paid":0,"attempts":0,"created_at":1791731054,"currency":"INR","entity":"order","id":"order_TmdzCaNbTzdSvN","notes":[],"offer_id":null,"receipt":"BOOKID140","status":"created"}
+[11/10/2026, 8:34:17 pm] [SUCCESS]: End RazorPay:
+[11/10/2026, 8:34:17 pm] [SUCCESS]: Created Order Route: /website/reservation/booking/create, booking_id:140
+[11/10/2026, 8:34:41 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:34:42 pm] [SUCCESS]: Start RazorPay fetchPaymentDetails:
+[11/10/2026, 8:34:42 pm] [SUCCESS]: paymentDetails: {"id":"pay_TmdzKq4Es8JksF","entity":"payment","amount":650000,"currency":"INR","status":"captured","order_id":"order_TmdzCaNbTzdSvN","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":true,"description":"Red Theme Booking","card_id":null,"bank":"CNRB","wallet":null,"vpa":null,"email":"jerindauntless@gmail.com","contact":"+919751752751","notes":{"address":"HiFive Cafe"},"fee":15340,"tax":2340,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"7358882"},"created_at":1791731062}
+[11/10/2026, 8:34:42 pm] [SUCCESS]: End RazorPay fetchPaymentDetails:
+[11/10/2026, 8:34:42 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:34:42 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:34:42 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:34:42 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:34:45 pm] [SUCCESS]: Route: HiFive Cafe -  Your Booking, Email sent to: jerindauntless@gmail.com, ID: <7413623a-d123-ce8c-fd6b-66217da026ca@gmail.com>
+[11/10/2026, 8:34:45 pm] [INFO]: Route: sendMessage, booking Parameters: {"booking_id":"BOOKID140","sub_title":"Red Theme","date":"20-10-2026","time_slot":"5 pm to 7 pm","total_people":"2"}
+[11/10/2026, 8:34:45 pm] [INFO]: Route: sendMessage, customer Parameters: {"user_mobile":"919751752751","user_name":"Jerin","user_email":"jerindauntless@gmail.com"}
+[11/10/2026, 8:34:45 pm] [INFO]: Route: sendMessage, After Sending Parameters: [{"type":"text","text":"Jerin"},{"type":"text","text":"BOOKID140"},{"type":"text","text":"20-10-2026"},{"type":"text","text":"5 pm to 7 pm"},{"type":"text","text":"2"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"HiFive Cafe"}]
+[11/10/2026, 8:34:46 pm] [SUCCESS]: DB Record Event Done Route: "updateMessageEvent"
+[11/10/2026, 8:34:46 pm] [SUCCESS]: Route: /website/reservation/booking/update, updatebooking_id:140
+[11/10/2026, 8:34:46 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:34:46 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:34:46 pm] [SUCCESS]: Route: /website/order/api
+[11/10/2026, 8:45:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:45:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:45:21 pm] [SUCCESS]: Route: /website/reservation/list
+[11/10/2026, 8:45:22 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:45:22 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:45:22 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[11/10/2026, 8:45:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[11/10/2026, 8:45:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[11/10/2026, 8:45:24 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5
+[11/10/2026, 8:45:25 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=16&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:45:25 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=16&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:45:25 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=16&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[11/10/2026, 8:45:30 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:45:30 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:45:49 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:45:49 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:45:49 pm] [SUCCESS]: Route: /website/reservation/booking/create, booking_id:141
+[11/10/2026, 8:45:49 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:45:49 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:45:49 pm] [SUCCESS]: Start RazorPay1:
+[11/10/2026, 8:45:49 pm] [SUCCESS]: order: {"amount":500000,"amount_due":500000,"amount_paid":0,"attempts":0,"created_at":1791731746,"currency":"INR","entity":"order","id":"order_TmeBNtW2c1atRi","notes":[],"offer_id":null,"receipt":"BOOKID141","status":"created"}
+[11/10/2026, 8:45:49 pm] [SUCCESS]: End RazorPay:
+[11/10/2026, 8:45:49 pm] [SUCCESS]: Created Order Route: /website/reservation/booking/create, booking_id:141
+[11/10/2026, 8:46:11 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:46:12 pm] [SUCCESS]: Start RazorPay fetchPaymentDetails:
+[11/10/2026, 8:46:12 pm] [SUCCESS]: paymentDetails: {"id":"pay_TmeBUZw95rbore","entity":"payment","amount":500000,"currency":"INR","status":"captured","order_id":"order_TmeBNtW2c1atRi","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":true,"description":"Red Silver Table Booking","card_id":null,"bank":"CNRB","wallet":null,"vpa":null,"email":"jerindauntless@gmail.com","contact":"+919751752751","notes":{"address":"HiFive Cafe"},"fee":11800,"tax":1800,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"6696442"},"created_at":1791731752}
+[11/10/2026, 8:46:12 pm] [SUCCESS]: End RazorPay fetchPaymentDetails:
+[11/10/2026, 8:46:12 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:46:12 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:46:12 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:46:12 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:46:15 pm] [SUCCESS]: Route: HiFive Cafe -  Your Booking, Email sent to: jerindauntless@gmail.com, ID: <95881ff4-2ed7-b739-0758-4271fa65fe6a@gmail.com>
+[11/10/2026, 8:46:15 pm] [INFO]: Route: sendMessage, booking Parameters: {"booking_id":"BOOKID141","sub_title":"Red Silver Table","date":"28-10-2026","time_slot":"11.30 pm to 1.30 pm","total_people":"2"}
+[11/10/2026, 8:46:15 pm] [INFO]: Route: sendMessage, customer Parameters: {"user_mobile":"919751752751","user_name":"Jerin","user_email":"jerindauntless@gmail.com"}
+[11/10/2026, 8:46:15 pm] [INFO]: Route: sendMessage, After Sending Parameters: [{"type":"text","text":"Jerin"},{"type":"text","text":"BOOKID141"},{"type":"text","text":"28-10-2026"},{"type":"text","text":"11.30 pm to 1.30 pm"},{"type":"text","text":"2"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"HiFive Cafe"}]
+[11/10/2026, 8:46:17 pm] [ERROR]: Start Route: "updateMessageEvent"
+[11/10/2026, 8:46:17 pm] [ERROR]: MySQL Error: Data too long for column 'message' at row 1
+[11/10/2026, 8:46:17 pm] [ERROR]: SQL Query: INSERT INTO messages (booking_id, cus_name, cus_phone, message, sent_flag, success_id, error, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+[11/10/2026, 8:46:17 pm] [ERROR]: Values: ["BOOKID141","Jerin","919751752751","\n    <div style=\"font-family: Arial, sans-serif; line-height: 1.6; color: #333;\">\n                <div style=\"text-align: center; padding: 20px; background-color: #f7f7f7;\">\n                    <img src=\"https://hifivecafe.in/logo.png\" alt=\"Cafe Logo\" style=\"width: 150px; margin-bottom: 20px;\">\n                </div>\n            <div style=\"padding: 10px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 5px;\">\n            <h1 style=\"color:rgb(255, 34, 34);\">Hello Jerin</h1>,\n\n            <p>Thank you for your request to book <b>Red Silver Table</b>. \n            Your <b>BOOKID141</b> booking is confirmed for <b>28-10-2026</b> at <b>Slot-11.30 pm to 1.30 pm</b> for <b>2</b> people. </p>\n\n            <p>We look forward to hosting you! If you have any special requests or need to make changes, \n            feel free to reply to this mail or for \n            whatsapp <img src=\"https://hifivecafe.in/whatsapp.jpg\" alt=\"whatsapp Logo\" style=\"width: 10px; height:10px;\"><b>undefined</b></P>\n\n            <p>For Phone Call: <i>9751752751</i></p>\n\n            <p>Best regards,</p>\n            <p style=\"font-weight: bold; color: #ff5722;\">\n                HiFive Cafe<br>\n                <a href=\"tel:9751752751\" style=\"color: #007bff; text-decoration: none;\">\n                    9751752751\n                </a>\n            </p>\n                </div>\n                <div style=\"text-align: center; margin-top: 20px; font-size: 12px; color: #999;\">\n                    <p>&copy; 2026 HiFive Cafe. All Rights Reserved.</p>\n                </div>\n            </div>",1,"919751752751",null,"2026-10-11T15:16:17.069Z"]
+[11/10/2026, 8:46:17 pm] [ERROR]: Error occurred at: at Packet.asError (C:\Users\JerinDas\d-drive\hifivecafe-fbp\hifivecafe-backend\node_modules\mysql2\lib\packets\packet.js:930:17)
+[11/10/2026, 8:46:17 pm] [ERROR]: End Route: "updateMessageEvent"
+[11/10/2026, 8:46:17 pm] [ERROR]: Route: sendMessage-updateMessageEvent, number: 919751752751, Error: Data too long for column 'message' at row 1
+[11/10/2026, 8:46:17 pm] [SUCCESS]: Route: /website/reservation/booking/update, updatebooking_id:141
+[11/10/2026, 8:46:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:46:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:46:17 pm] [SUCCESS]: Route: /website/order/api
+[11/10/2026, 8:48:06 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:48:06 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:48:06 pm] [SUCCESS]: Route: /website/reservation/list
+[11/10/2026, 8:48:07 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:48:07 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:48:07 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[11/10/2026, 8:48:09 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:48:09 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:48:09 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=1
+[11/10/2026, 8:48:12 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:48:12 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:48:12 pm] [SUCCESS]: Route: /website/reservation/list
+[11/10/2026, 8:48:14 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:48:14 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:48:14 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[11/10/2026, 8:48:15 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:48:15 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:48:15 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=1
+[11/10/2026, 8:48:16 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:48:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:48:17 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[11/10/2026, 8:48:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:48:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:48:38 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:48:38 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:48:38 pm] [SUCCESS]: Route: /website/reservation/booking/create, booking_id:142
+[11/10/2026, 8:48:38 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:48:38 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:48:38 pm] [SUCCESS]: Start RazorPay1:
+[11/10/2026, 8:48:38 pm] [SUCCESS]: order: {"amount":650000,"amount_due":650000,"amount_paid":0,"attempts":0,"created_at":1791731915,"currency":"INR","entity":"order","id":"order_TmeEMl1GVJQwla","notes":[],"offer_id":null,"receipt":"BOOKID142","status":"created"}
+[11/10/2026, 8:48:38 pm] [SUCCESS]: End RazorPay:
+[11/10/2026, 8:48:38 pm] [SUCCESS]: Created Order Route: /website/reservation/booking/create, booking_id:142
+[11/10/2026, 8:49:02 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:49:02 pm] [SUCCESS]: Start RazorPay fetchPaymentDetails:
+[11/10/2026, 8:49:02 pm] [SUCCESS]: paymentDetails: {"id":"pay_TmeETL7q7gqS3K","entity":"payment","amount":650000,"currency":"INR","status":"captured","order_id":"order_TmeEMl1GVJQwla","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":true,"description":"Love with Flowers Booking","card_id":null,"bank":"CNRB","wallet":null,"vpa":null,"email":"jerindauntless@gmail.com","contact":"+919751752751","notes":{"address":"HiFive Cafe"},"fee":15340,"tax":2340,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"9845566"},"created_at":1791731921}
+[11/10/2026, 8:49:02 pm] [SUCCESS]: End RazorPay fetchPaymentDetails:
+[11/10/2026, 8:49:02 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:49:02 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:49:02 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:49:02 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:49:06 pm] [SUCCESS]: Route: HiFive Cafe -  Your Booking, Email sent to: jerindauntless@gmail.com, ID: <9c971e37-ac24-2c05-df54-1f0104426966@gmail.com>
+[11/10/2026, 8:49:06 pm] [INFO]: Route: sendMessage, booking Parameters: {"booking_id":"BOOKID142","sub_title":"Love with Flowers","date":"21-10-2026","time_slot":"11.30 pm to 1.30 pm","total_people":"2"}
+[11/10/2026, 8:49:06 pm] [INFO]: Route: sendMessage, customer Parameters: {"user_mobile":"919751752751","user_name":"Jerin","user_email":"jerindauntless@gmail.com"}
+[11/10/2026, 8:49:06 pm] [INFO]: Route: sendMessage, After Sending Parameters: [{"type":"text","text":"Jerin"},{"type":"text","text":"BOOKID142"},{"type":"text","text":"21-10-2026"},{"type":"text","text":"11.30 pm to 1.30 pm"},{"type":"text","text":"2"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"HiFive Cafe"}]
+[11/10/2026, 8:49:07 pm] [SUCCESS]: DB Record Event Done Route: "updateMessageEvent"
+[11/10/2026, 8:49:07 pm] [SUCCESS]: Route: /website/reservation/booking/update, updatebooking_id:142
+[11/10/2026, 8:49:07 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:49:07 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:49:07 pm] [SUCCESS]: Route: /website/order/api
+[11/10/2026, 8:50:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:50:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:50:17 pm] [SUCCESS]: Route: /website/reservation/list
+[11/10/2026, 8:50:18 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:50:18 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:50:18 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[11/10/2026, 8:50:19 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:50:19 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:50:19 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=1
+[11/10/2026, 8:50:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:50:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:50:21 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[11/10/2026, 8:50:26 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:50:26 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:50:43 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:50:43 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:50:43 pm] [SUCCESS]: Route: /website/reservation/booking/create, booking_id:143
+[11/10/2026, 8:50:43 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:50:43 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:50:44 pm] [SUCCESS]: Start RazorPay1:
+[11/10/2026, 8:50:44 pm] [SUCCESS]: order: {"amount":650000,"amount_due":650000,"amount_paid":0,"attempts":0,"created_at":1791732040,"currency":"INR","entity":"order","id":"order_TmeGZYMwaSLQW1","notes":[],"offer_id":null,"receipt":"BOOKID143","status":"created"}
+[11/10/2026, 8:50:44 pm] [SUCCESS]: End RazorPay:
+[11/10/2026, 8:50:44 pm] [SUCCESS]: Created Order Route: /website/reservation/booking/create, booking_id:143
+[11/10/2026, 8:51:09 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:51:09 pm] [SUCCESS]: Start RazorPay fetchPaymentDetails:
+[11/10/2026, 8:51:09 pm] [SUCCESS]: paymentDetails: {"id":"pay_TmeGgYH2BBzzv3","entity":"payment","amount":650000,"currency":"INR","status":"captured","order_id":"order_TmeGZYMwaSLQW1","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":true,"description":"Love with Flowers Booking","card_id":null,"bank":"CNRB","wallet":null,"vpa":null,"email":"jerindauntless@gmail.com","contact":"+919751752751","notes":{"address":"HiFive Cafe"},"fee":15340,"tax":2340,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"6473756"},"created_at":1791732047}
+[11/10/2026, 8:51:09 pm] [SUCCESS]: End RazorPay fetchPaymentDetails:
+[11/10/2026, 8:51:09 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:51:09 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:51:09 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:51:09 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:51:13 pm] [SUCCESS]: Route: HiFive Cafe -  Your Booking, Email sent to: jerindauntless@gmail.com, ID: <3e334116-ca6f-1a0d-934c-9af73a436292@gmail.com>
+[11/10/2026, 8:51:13 pm] [INFO]: Route: sendMessage, booking Parameters: {"booking_id":"BOOKID143","sub_title":"Love with Flowers","date":"29-10-2026","time_slot":"2 pm to 4 pm","total_people":"2"}
+[11/10/2026, 8:51:13 pm] [INFO]: Route: sendMessage, customer Parameters: {"user_mobile":"919442006330","user_name":"Jerin","user_email":"jerindauntless@gmail.com"}
+[11/10/2026, 8:51:13 pm] [INFO]: Route: sendMessage, After Sending Parameters: [{"type":"text","text":"Jerin"},{"type":"text","text":"BOOKID143"},{"type":"text","text":"29-10-2026"},{"type":"text","text":"2 pm to 4 pm"},{"type":"text","text":"2"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"HiFive Cafe"}]
+[11/10/2026, 8:51:14 pm] [SUCCESS]: DB Record Event Done Route: "updateMessageEvent"
+[11/10/2026, 8:51:14 pm] [SUCCESS]: Route: /website/reservation/booking/update, updatebooking_id:143
+[11/10/2026, 8:51:15 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:51:15 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:51:15 pm] [SUCCESS]: Route: /website/order/api
+[11/10/2026, 8:51:39 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:51:39 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[11/10/2026, 8:51:39 pm] [SUCCESS]: Route: /website/reservation/list
+[11/10/2026, 8:51:41 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:51:41 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[11/10/2026, 8:51:41 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[11/10/2026, 8:51:42 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:51:42 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=1"
+[11/10/2026, 8:51:42 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=1
+[11/10/2026, 8:51:44 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:51:44 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[11/10/2026, 8:51:44 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=1&reser_sub_id=17&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[11/10/2026, 8:51:48 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:51:48 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[11/10/2026, 8:52:18 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:52:18 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:52:18 pm] [SUCCESS]: Route: /website/reservation/booking/create, booking_id:144
+[11/10/2026, 8:52:18 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:52:18 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[11/10/2026, 8:52:18 pm] [SUCCESS]: Start RazorPay1:
+[11/10/2026, 8:52:18 pm] [SUCCESS]: order: {"amount":650000,"amount_due":650000,"amount_paid":0,"attempts":0,"created_at":1791732135,"currency":"INR","entity":"order","id":"order_TmeIERr0pSb6bT","notes":[],"offer_id":null,"receipt":"BOOKID144","status":"created"}
+[11/10/2026, 8:52:18 pm] [SUCCESS]: End RazorPay:
+[11/10/2026, 8:52:18 pm] [SUCCESS]: Created Order Route: /website/reservation/booking/create, booking_id:144
+[11/10/2026, 8:52:40 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:52:40 pm] [SUCCESS]: Start RazorPay fetchPaymentDetails:
+[11/10/2026, 8:52:40 pm] [SUCCESS]: paymentDetails: {"id":"pay_TmeIKOwg1Ls4SX","entity":"payment","amount":650000,"currency":"INR","status":"captured","order_id":"order_TmeIERr0pSb6bT","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":true,"description":"Love with Flowers Booking","card_id":null,"bank":"CNRB","wallet":null,"vpa":null,"email":"jerindauntless@gmail.com","contact":"+919751752751","notes":{"address":"HiFive Cafe"},"fee":15340,"tax":2340,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"7767929"},"created_at":1791732141}
+[11/10/2026, 8:52:40 pm] [SUCCESS]: End RazorPay fetchPaymentDetails:
+[11/10/2026, 8:52:40 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[11/10/2026, 8:52:40 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:52:40 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:52:40 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[11/10/2026, 8:52:43 pm] [SUCCESS]: Route: HiFive Cafe -  Your Booking, Email sent to: jerindauntless@gmail.com, ID: <e3f2bee9-4cb6-a4cc-2556-f6c77e90983e@gmail.com>
+[11/10/2026, 8:52:43 pm] [INFO]: Route: sendMessage, booking Parameters: {"booking_id":"BOOKID144","sub_title":"Love with Flowers","date":"28-10-2026","time_slot":"11.30 pm to 1.30 pm","total_people":"2"}
+[11/10/2026, 8:52:43 pm] [INFO]: Route: sendMessage, customer Parameters: {"user_mobile":"919442006337","user_name":"Jerin","user_email":"jerindauntless@gmail.com"}
+[11/10/2026, 8:52:43 pm] [INFO]: Route: sendMessage, After Sending Parameters: [{"type":"text","text":"Jerin"},{"type":"text","text":"BOOKID144"},{"type":"text","text":"28-10-2026"},{"type":"text","text":"11.30 pm to 1.30 pm"},{"type":"text","text":"2"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"undefined"},{"type":"text","text":"HiFive Cafe"}]
+[11/10/2026, 8:52:45 pm] [SUCCESS]: DB Record Event Done Route: "updateMessageEvent"
+[11/10/2026, 8:52:45 pm] [SUCCESS]: Route: /website/reservation/booking/update, updatebooking_id:144
+[11/10/2026, 8:52:45 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:52:45 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[11/10/2026, 8:52:45 pm] [SUCCESS]: Route: /website/order/api

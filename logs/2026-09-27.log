@@ -1,0 +1,109 @@
+[27/9/2026, 9:15:54 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 9:15:54 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 9:15:54 am] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 9:15:57 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 9:15:57 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 9:15:57 am] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[27/9/2026, 9:15:58 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 9:15:58 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 9:15:58 am] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5
+[27/9/2026, 9:15:59 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[27/9/2026, 9:15:59 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[27/9/2026, 9:15:59 am] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[27/9/2026, 9:16:06 am] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[27/9/2026, 9:16:06 am] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[27/9/2026, 9:16:06 am] [SUCCESS]: Route: /website/check/booking/time_slot
+[27/9/2026, 9:16:11 am] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[27/9/2026, 9:16:11 am] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[27/9/2026, 9:16:16 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 9:16:16 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 9:16:16 am] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5
+[27/9/2026, 9:16:18 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 9:16:18 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 9:16:18 am] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[27/9/2026, 9:16:20 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 9:16:20 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 9:16:20 am] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 9:17:25 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 9:17:25 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 9:17:25 am] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 9:17:27 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 9:17:27 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 9:17:27 am] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[27/9/2026, 9:17:28 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 9:17:28 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 9:17:28 am] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5
+[27/9/2026, 9:17:29 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[27/9/2026, 9:17:29 am] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[27/9/2026, 9:17:29 am] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[27/9/2026, 12:58:55 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 12:58:55 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 12:58:55 pm] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 2:08:48 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 2:08:48 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 2:08:48 pm] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 2:08:54 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 2:08:54 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 2:08:54 pm] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 2:08:57 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 2:08:57 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 2:08:57 pm] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 7:56:06 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 7:56:06 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 7:56:06 pm] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 7:56:08 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 7:56:08 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 7:56:08 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[27/9/2026, 7:56:09 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 7:56:09 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 7:56:09 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5
+[27/9/2026, 7:56:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[27/9/2026, 7:56:10 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[27/9/2026, 7:56:10 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[27/9/2026, 7:56:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 7:56:17 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 7:56:17 pm] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 11:23:20 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 11:23:20 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[27/9/2026, 11:23:20 pm] [SUCCESS]: Route: /website/reservation/list
+[27/9/2026, 11:23:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 11:23:21 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[27/9/2026, 11:23:21 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[27/9/2026, 11:23:23 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 11:23:23 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[27/9/2026, 11:23:23 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5
+[27/9/2026, 11:23:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[27/9/2026, 11:23:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[27/9/2026, 11:23:24 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[27/9/2026, 11:23:31 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[27/9/2026, 11:23:31 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[27/9/2026, 11:23:31 pm] [SUCCESS]: Route: /website/check/booking/time_slot
+[27/9/2026, 11:23:34 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[27/9/2026, 11:23:34 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[27/9/2026, 11:23:56 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[27/9/2026, 11:23:56 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[27/9/2026, 11:23:56 pm] [SUCCESS]: Route: /website/reservation/booking/create, booking_id:78
+[27/9/2026, 11:23:56 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[27/9/2026, 11:23:56 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/create"
+[27/9/2026, 11:23:56 pm] [SUCCESS]: Start RazorPay1:
+[27/9/2026, 11:23:56 pm] [SUCCESS]: order: {"amount":500000,"amount_due":500000,"amount_paid":0,"attempts":0,"created_at":1790531634,"currency":"INR","entity":"order","id":"order_Th9Okm8hnZGyma","notes":[],"offer_id":null,"receipt":"BOOKID78","status":"created"}
+[27/9/2026, 11:23:56 pm] [SUCCESS]: End RazorPay:
+[27/9/2026, 11:23:56 pm] [SUCCESS]: Created Order Route: /website/reservation/booking/create, booking_id:78
+[27/9/2026, 11:24:23 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[27/9/2026, 11:24:24 pm] [SUCCESS]: Start RazorPay fetchPaymentDetails:
+[27/9/2026, 11:24:24 pm] [SUCCESS]: paymentDetails: {"id":"pay_Th9OuecF3S4lT8","entity":"payment","amount":500000,"currency":"INR","status":"captured","order_id":"order_Th9Okm8hnZGyma","invoice_id":null,"international":false,"method":"netbanking","amount_refunded":0,"refund_status":null,"captured":true,"description":"Outdoor Silver Table Booking","card_id":null,"bank":"CNRB","wallet":null,"vpa":null,"email":"jerindauntless@gmail.com","contact":"+919751752751","notes":{"address":"HiFive Cafe"},"fee":11800,"tax":1800,"error_code":null,"error_description":null,"error_source":null,"error_step":null,"error_reason":null,"acquirer_data":{"bank_transaction_id":"9751676"},"created_at":1790531644}
+[27/9/2026, 11:24:24 pm] [SUCCESS]: End RazorPay fetchPaymentDetails:
+[27/9/2026, 11:24:24 pm] [SUCCESS]: DB Record Event Done Route: "ensureCommentsTable"
+[27/9/2026, 11:24:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[27/9/2026, 11:24:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[27/9/2026, 11:24:24 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/booking/update"
+[27/9/2026, 11:24:28 pm] [SUCCESS]: Route: HiFive Cafe -  Your Booking, Email sent to: jerindauntless@gmail.com, ID: <edddc466-bb3c-da8f-4f9a-8de2f87d4878@gmail.com>
+[27/9/2026, 11:24:28 pm] [INFO]: Route: sendMessage, booking Parameters: {"booking_id":"BOOKID78","sub_title":"Outdoor Silver Table","date":"10-10-2026","time_slot":"8 pm to 10 pm","total_people":"2"}
+[27/9/2026, 11:24:28 pm] [INFO]: Route: sendMessage, customer Parameters: {"user_mobile":"919751752751","user_name":"Jerin","user_email":"jerindauntless@gmail.com"}
+[27/9/2026, 11:24:28 pm] [INFO]: Route: sendMessage, After Sending Parameters: [{"type":"text","text":"Outdoor Silver Table"},{"type":"text","text":"BOOKID78"},{"type":"text","text":"10-10-2026"},{"type":"text","text":"8 pm to 10 pm"},{"type":"text","text":"2"},{"type":"text","text":"9751752751"},{"type":"text","text":"HiFive Cafe"}]
+[27/9/2026, 11:24:29 pm] [SUCCESS]: DB Record Event Done Route: "updateMessageEvent"
+[27/9/2026, 11:24:29 pm] [ERROR]: Route: sendMessage, number: 919751752751, Error: Request failed with status code 404
+[27/9/2026, 11:24:29 pm] [SUCCESS]: Route: /website/reservation/booking/update, updatebooking_id:78
+[27/9/2026, 11:24:29 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[27/9/2026, 11:24:29 pm] [SUCCESS]: DB Record Event Done Route: "/website/order/api"
+[27/9/2026, 11:24:29 pm] [SUCCESS]: Route: /website/order/api

@@ -20,6 +20,56 @@ import crypto from 'crypto';
 
 const router = express.Router();
 
+const ensureOtpColumns = async () => {
+    try {
+        const columns = await executeQuery(
+            `SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users' AND COLUMN_NAME IN ('otp', 'otp_expiry')`,
+            [],
+            'ensureOtpColumns'
+        );
+        const existingColumns = (columns || []).map(col => (col.COLUMN_NAME || col.column_name || '').toLowerCase());
+
+        if (!existingColumns.includes('otp')) {
+            try {
+                await executeQuery(`ALTER TABLE users ADD COLUMN otp VARCHAR(255) NULL`, [], 'ensureOtpColumns');
+            } catch (err) {
+                if (err.errno !== 1060 && err.code !== 'ER_DUP_FIELDNAME') throw err;
+            }
+        }
+        if (!existingColumns.includes('otp_expiry')) {
+            try {
+                await executeQuery(`ALTER TABLE users ADD COLUMN otp_expiry BIGINT NULL`, [], 'ensureOtpColumns');
+            } catch (err) {
+                if (err.errno !== 1060 && err.code !== 'ER_DUP_FIELDNAME') throw err;
+            }
+        }
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+const ensureReservationBookingCommentsTable = async () => {
+    try {
+        await executeQuery(
+            `CREATE TABLE IF NOT EXISTS reservation_booking_comments (
+                id INT AUTO_INCREMENT PRIMARY KEY,
+                booking_id INT NOT NULL,
+                admin_id INT NULL,
+                user_id VARCHAR(255) NULL,
+                comment TEXT NULL,
+                status VARCHAR(255) NULL,
+                created_at VARCHAR(255) NULL,
+                updated_at VARCHAR(255) NULL
+            )`,
+            [],
+            'ensureCommentsTable'
+        );
+    } catch (error) {
+        console.log("ensureReservationBookingCommentsTable error:", error);
+    }
+};
+
+
 const firstimgurl = baseImageUrl;
 const Arrayimgurl = baseImageUrl;
 
@@ -57,7 +107,7 @@ router.post('/register', async (req, res) => {
         if (checkPhone.length > 0) { return res.send({ Response: { Success: '0', Message: "Phone number Already Registered", result: [] } }); }
 
         password = encryptData(password.toString(), false);
-        const register = await executeQuery(`insert into users(name,mobile,email,password,created_at)values(?,?,?,?,?)`, [name, phone_number, email, password, currentdate], req.originalUrl || req.url);
+        const register = await executeQuery(`insert into users(name,mobile,email,password,status,created_at) values(?,?,?,?,?,?)`, [name, phone_number, email, password, 1, currentdate], req.originalUrl || req.url);
         if (register.length <= 0) { return res.send({ Response: { Success: '0', Message: "Register unsuccessfully", result: [] } }); }
 
         const signin = await executeQuery(`select * from users where email = ? `, [email], req.originalUrl || req.url);
@@ -101,25 +151,15 @@ router.post("/signin", async (req, res) => {
             return res.send({ Response: { Success: '0', Message: "Invalid Email Format", result: [] } });
         }
 
-        // console.log(req)
-        const signin = await executeQuery(`select * from users where email = ? and status=?`, [email, 'Active'], req.originalUrl || req.url);
+        const signin = await executeQuery(`select * from users where email = ? and (status = 'Active' or status = 1 or status = '1' or status is null or status = '')`, [email], req.originalUrl || req.url);
         if (signin.length <= 0) { return res.send({ Response: { Success: '0', Message: "Email Not Found", result: [] } }); }
-
 
         let email1 = signin[0].email;
         let password1 = decryptData(signin[0].password.toString());
-        console.log(email1);
-        console.log(password1);
 
-        if (email1 == email && password1 == password) {
+        if (email1.toLowerCase() == email.toLowerCase() && password1.toString() == password.toString()) {
             let result = [];
-            console.log("signin");
-            console.log(signin);
             const encryptedData = encryptData(signin[0].name + "-" + signin[0].email + "-" + signin[0].id + "-" + signin[0].mobile);
-            console.log("encryptedData");
-            console.log(encryptedData);
-            // const data = decryptData(encryptedData)
-            // console.log(data);
 
             result.push({ email: email1, user_id: encryptedData, name: signin[0].name, mobile: signin[0].mobile });
             logger.success(`Route: ${req.originalUrl || req.url}, ID: ${signin[0].id}, Email: ${email1}`);
@@ -365,7 +405,7 @@ router.get("/reservation/category/subcategory", async (req, res) => {
         console.log(userInfo);
         console.log(userid);
         console.log(req.body);
-        const userResult = await executeQuery(`SELECT * FROM users WHERE id = ? AND status = ?`, [userid, 'Active'], req.originalUrl || req.url); //check user exist in DB   
+        const userResult = await executeQuery(`SELECT * FROM users WHERE id = ? `, [userid], req.originalUrl || req.url); //check user exist in DB   
         if (userResult.length <= 0) { return res.send({ Response: { Success: '0', Message: "Please Signup!", } }); }
 
         let objfile = {};
@@ -526,7 +566,7 @@ router.post("/reservation/booking/create", async (req, res) => {
         console.log(userid);
         console.log(req.body);
 
-        const userResult = await executeQuery(`SELECT * FROM users WHERE id = ? AND status = ?`, [userid, "Active"], req.originalUrl || req.url); //check user exist in DB   
+        const userResult = await executeQuery(`SELECT * FROM users WHERE id = ? `, [userid], req.originalUrl || req.url); //check user exist in DB   
         if (userResult.length <= 0) { return res.send({ Response: { Success: '0', Message: "Please Signup!", } }); }
 
         let { reser_id, reser_catid, resersubcatid } = req.body;
@@ -618,13 +658,13 @@ router.post("/reservation/booking/create", async (req, res) => {
                     if (bookingInfo.length > 0) {
                         let date = await getStringDate(bookingInfo[0].date);
 
-                        let cus = { user_mobile: `91${userResult[0].mobile}`, user_name: userResult[0].name, user_email: userResult[0].email };
+                        let cus = { user_mobile: bookingInfo[0].guest_whatsapp || userResult[0].mobile, user_name: userResult[0].name, user_email: userResult[0].email };
                         let booking = { booking_id: `BOOKID${bookingInfo[0].booking_id}`, sub_title: reservationSubCategory[0].sub_tilte, date: date, time_slot: bookingInfo[0].time, total_people: bookingInfo[0].total_people };
 
                         //Malling
                         let booking_mail = await mailingMessage('Booking', { cus: cus, booking: booking });
                         if (booking_mail != "" && booking_mail.message && booking_mail.subject) {
-                            await sendEmail(userEmail, userName, booking_mail.message, booking_mail.subject);
+                            await sendEmail(cus.user_email, cus.user_name, booking_mail.message, booking_mail.subject);
                         }
 
                         await sendMessage(cus, booking, "booking"); //whatsapp
@@ -640,7 +680,12 @@ router.post("/reservation/booking/create", async (req, res) => {
                     });
                 }
 
-                await executeQuery(`insert into reservation_booking_comments(booking_id,user_id,comment,status,created_at,updated_at)values(?,?,?,?,?,?)`, [reservationId, userid, '', bookingStatus, formatDate, formatDate], req.originalUrl || req.url);
+                try {
+                    await ensureReservationBookingCommentsTable();
+                    await executeQuery(`insert into reservation_booking_comments(booking_id,user_id,comment,status,created_at,updated_at)values(?,?,?,?,?,?)`, [reservationId, userid, '', bookingStatus, formatDate, formatDate], req.originalUrl || req.url);
+                } catch (commentErr) {
+                    console.log('Error inserting booking comment:', commentErr.message || commentErr);
+                }
 
                 // await mailbooking(reservationId, res)
                 let razorPayCreate = await createOrder({ amount: total, receipt: `BOOKID${reservationId}`.toString() })
@@ -782,7 +827,12 @@ router.post("/reservation/booking/update", async (req, res) => {
                 return res.json({ Response: { Success: "0", Message: "Error in Update payment details" } });
             } else {
 
-                await executeQuery(`insert into reservation_booking_comments(booking_id,user_id,comment,status,created_at,updated_at)values(?,?,?,?,?,?)`, [booking_id, userid, '', bookingStatus, formatedate, formatedate], req.originalUrl || req.url);
+                try {
+                    await ensureReservationBookingCommentsTable();
+                    await executeQuery(`insert into reservation_booking_comments(booking_id,user_id,comment,status,created_at,updated_at)values(?,?,?,?,?,?)`, [booking_id, userid, '', bookingStatus, formatedate, formatedate], req.originalUrl || req.url);
+                } catch (commentErr) {
+                    console.log('Error inserting booking comment:', commentErr.message || commentErr);
+                }
 
                 let bookingInfo = await executeQuery(`SELECT * FROM reservation_booking WHERE booking_id = ?`, [booking_id], req.originalUrl || req.url);
                 if (bookingInfo.length > 0) {
@@ -790,12 +840,12 @@ router.post("/reservation/booking/update", async (req, res) => {
 
                     let date = await getStringDate(bookingInfo[0].date);
 
-                    let cus = { user_mobile: `91${userResult[0].mobile}`, user_name: userResult[0].name, user_email: userResult[0].email };
+                    let cus = { user_mobile: bookingInfo[0].guest_whatsapp || userResult[0].mobile, user_name: userResult[0].name, user_email: userResult[0].email };
                     let booking = { booking_id: `BOOKID${bookingInfo[0].booking_id}`, sub_title: reservationSubCategory[0].sub_tilte, date: date, time_slot: bookingInfo[0].time_slot, total_people: bookingInfo[0].total_people };
 
                     let booking_mail = await mailingMessage('Booking', { cus: cus, booking: booking });
                     if (booking_mail != "" && booking_mail.message && booking_mail.subject) {
-                        await sendEmail(userEmail, userName, booking_mail.message, booking_mail.subject);
+                        await sendEmail(cus.user_email, cus.user_name, booking_mail.message, booking_mail.subject);
                     }
                     await sendMessage(cus, booking, "booking"); //whatsapp
                 }
@@ -1052,6 +1102,8 @@ router.post("/check/booking/time_slot", async (req, res) => {
 
 router.post("/forgot-password", async (req, res) => {
     try {
+        await ensureOtpColumns();
+
         const { email } = req.body;
         const currentdate = await getIndianDateTime();
         const userResult = await executeQuery(`SELECT * FROM users WHERE email = ? `, [email], req.originalUrl || req.url);
@@ -1059,34 +1111,34 @@ router.post("/forgot-password", async (req, res) => {
         const otp = crypto.randomInt(100000, 999999).toString();
         const otpExpires = Date.now() + 300000; // OTP expires in 5 minutes
 
-        // const currentdate = new Date();
         let updateSQL = `UPDATE users SET otp=?, otp_expiry=?, updated_at=? WHERE email=?`;
         let update_sqlValues = [otp, otpExpires, currentdate, email];
         const insertOTP = await executeQuery(updateSQL, update_sqlValues, req.originalUrl || req.url);
         if (insertOTP.length <= 0) { return res.send({ Response: { Success: '0', Message: "OTP not generated, please contact Hifive", result: [] } }); }
 
-        //Mailing
         let otp_mail = await mailingMessage('OTP', { otp: otp });
         if (otp_mail != "" && otp_mail.message && otp_mail.subject) {
             let sentMail = await sendEmail(email, email, otp_mail.message, otp_mail.subject);
             if (sentMail == "success") {
                 res.send({ Response: { Success: "1", Message: "OTP Sent Successfully to your mail ID" } })
             } else {
-                res.send({ Response: { Success: "0", Message: "Email not valid, please contact Hifive" } })
+                res.send({ Response: { Success: "0", Message: "Failed to send OTP email. Please check backend email credentials." } })
             }
         }
 
     } catch (error) {
         console.log(error)
-        const stackLines = error.stack.split('\n'); // Split the stack into lines
+        const stackLines = error.stack.split('\n');
         const errorLine = stackLines[1]?.trim();
         logger.error(`Route: "${req.originalUrl || req.url}", Error: ${error.message}, ErrorLine: ${errorLine}`);
-        res.send({ Response: { Success: "0", Message: "Email not valid, please contact Hifive" } })
+        res.send({ Response: { Success: "0", Message: "Unable to process forgot password request. Please contact Hifive." } })
     }
 });
 
 router.post("/reset-password", async (req, res) => {
     try {
+        await ensureOtpColumns();
+
         let { email, otp, newPassword } = req.body;
         const currentdate = await getIndianDateTime();
 
@@ -1094,16 +1146,15 @@ router.post("/reset-password", async (req, res) => {
         if (userResult.length <= 0) { return res.send({ Response: { Success: '0', Message: "Email not registered in Hifive", } }); }
 
         let user = userResult[0];
+        const userOtp = user && user.otp ? String(user.otp) : "";
+        const userOtpExpiry = user && user.otp_expiry ? Number(user.otp_expiry) : 0;
 
-        console.log(user.otp);
-        console.log(otp);
-        if (!user || parseInt(user.otp, 10) !== parseInt(otp, 10) || user.otpExpires < Date.now()) {
+        if (!user || userOtp !== String(otp) || userOtpExpiry < Date.now()) {
             return res.send({ Response: { Success: '0', Message: "Invalid or expired OTP", } });
         }
 
         newPassword = encryptData(newPassword.toString(), false);
 
-        // const currentdate = new Date();
         let updateSQL = `UPDATE users SET otp=?, otp_expiry=?, password=?, updated_at=? WHERE email=?`;
         let update_sqlValues = [null, null, newPassword, currentdate, email];
 
@@ -1113,10 +1164,10 @@ router.post("/reset-password", async (req, res) => {
         res.send({ Response: { Success: "1", Message: "Password Reset successfully!" } })
     } catch (error) {
         console.log(error)
-        const stackLines = error.stack.split('\n'); // Split the stack into lines
+        const stackLines = error.stack.split('\n');
         const errorLine = stackLines[1]?.trim();
         logger.error(`Route: "${req.originalUrl || req.url}", Error: ${error.message}, ErrorLine: ${errorLine}`);
-        res.send({ Response: { Success: "0", Message: "Email not valid, please contact Hifive" } })
+        res.send({ Response: { Success: "0", Message: "Unable to process reset password request. Please contact Hifive." } })
     }
 });
 

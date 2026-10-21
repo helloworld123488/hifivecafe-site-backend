@@ -1,0 +1,23 @@
+[6/10/2026, 12:22:39 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[6/10/2026, 12:22:39 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/list"
+[6/10/2026, 12:22:39 pm] [SUCCESS]: Route: /website/reservation/list
+[6/10/2026, 12:22:41 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[6/10/2026, 12:22:41 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/list?reser_id=1"
+[6/10/2026, 12:22:41 pm] [SUCCESS]: Route: /website/reservation/category/list?reser_id=1
+[6/10/2026, 12:22:42 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[6/10/2026, 12:22:42 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[6/10/2026, 12:22:42 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5
+[6/10/2026, 12:22:43 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[6/10/2026, 12:22:43 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY="
+[6/10/2026, 12:22:43 pm] [SUCCESS]: Route: /website/reservation/category/subcategory?res_id=1&res_cat_id=5&reser_sub_id=15&user_id=ODBmNzNiYWJjZGE4YWEyZTk1NjlkMmEwMjAyYWI0Mzk3MWY2YjQ3ZmVjNGNhZTY4NmFlNjEzMWU0MDExMjAxMzgwZWYwMmU5OWM3NDhhMDZiODUxZjBiOGFiMGIzYzEzMzk2MzU1YTE2NDU0MzJjYzg1OWMzOTFlNDA4YTU5YmY=
+[6/10/2026, 12:22:50 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[6/10/2026, 12:22:50 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[6/10/2026, 12:22:50 pm] [SUCCESS]: Route: /website/check/booking/time_slot
+[6/10/2026, 12:22:55 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[6/10/2026, 12:22:55 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[6/10/2026, 12:22:55 pm] [SUCCESS]: Route: /website/check/booking/time_slot
+[6/10/2026, 12:23:04 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[6/10/2026, 12:23:04 pm] [SUCCESS]: DB Record Event Done Route: "/website/check/booking/time_slot"
+[6/10/2026, 12:23:14 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[6/10/2026, 12:23:14 pm] [SUCCESS]: DB Record Event Done Route: "/website/reservation/subcategory/list?reser_id=1&resercat_id=5"
+[6/10/2026, 12:23:14 pm] [SUCCESS]: Route: /website/reservation/subcategory/list?reser_id=1&resercat_id=5

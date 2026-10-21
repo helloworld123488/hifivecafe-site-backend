@@ -1,14 +1,14 @@
-
 export function bookingMessage(cus, booking, cafe) {
 
-    let message = `Hello ${cus.user_name},
-Thank you for your request ${booking.booking_id} to book a table at ${cafe.cafeName}. Your ${booking.sub_title} booking is confirmed for ${booking.date} at ${booking.time_slot} for ${booking.total_people} people.
+let message = `Booking Notification: Your booking for ${booking.sub_title} has been confirmed.
 
-We look forward to hosting you! If you have any special requests or need to make changes, feel free to reply to this message or call us at ${cafe.cafeNumber}.
+Booking Details:
+- Booking ID: ${booking.booking_id}
+- Date: ${booking.date}
+- Time Slot: ${booking.time_slot}
+- Guests: ${booking.total_people}
 
-Warm regards,
-${cafe.cafeName}`;
+If you have any questions or need assistance, feel free to contact ${cafe.cafeName} at ${cafe.cafeNumber} anytime.`;
 
     return message;
 }
-
